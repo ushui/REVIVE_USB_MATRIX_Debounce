@@ -1,5 +1,5 @@
 # REVIVE USB MATRIX チャタリング対策版（PID004B）
-[REVIVE USB Debounce](https://github.com/ushui/REVIVE_USB_Debounce)のマトリクス入力対応版です。
+[REVIVE USB チャタリング対策版（PID004A）](https://github.com/ushui/REVIVE_USB_Debounce)のマトリクス入力対応版です。
 
 一度しかボタンを押していないのにダブルクリックになる、キーが複数回入力されるなどのケースを防ぐことができます。  
 通常のファームウェアはリアルタイムでスイッチの状態を読み取っているのでわずかな信号の揺れも検知してしまいますが、これを一定時間ごとに読み取って解決しています。  
