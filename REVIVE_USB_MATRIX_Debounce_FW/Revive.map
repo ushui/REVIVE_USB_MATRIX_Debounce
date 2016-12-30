@@ -1,0 +1,1408 @@
+MPLINK 5.00, LINKER
+Linker Map File - Created Sat Dec 31 02:47:13 2016
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+    HIGH_INTERRUPT_VECTOR       code   0x000008    program   0x000006
+     LOW_INTERRUPT_VECTOR       code   0x000018    program   0x000006
+    REMAPPED_RESET_VECTOR       code   0x001000    program   0x000006
+           .code___init.o       code   0x001006    program   0x000002
+REMAPPED_HIGH_INTERRUPT_VECTOR       code   0x001008    program   0x000006
+REMAPPED_LOW_INTERRUPT_VECTOR       code   0x001018    program   0x000006
+                   .cinit    romdata   0x00101e    program   0x00000e
+             .code_main.o       code   0x00102c    program   0x001372
+       .code_usb_device.o       code   0x00239e    program   0x000cf4
+.romdata_usb_descriptors.o    romdata   0x003092    program   0x0001af
+      .idata_fxd0808u.o_i    romdata   0x003241    program   0x000000
+        .romdata_eeprom.o    romdata   0x003241    program   0x000000
+      .romdata_fxd0808u.o    romdata   0x003241    program   0x000000
+      .idata_fxd1616u.o_i    romdata   0x003241    program   0x000000
+      .romdata_fxd1616u.o    romdata   0x003241    program   0x000000
+        .idata___init.o_i    romdata   0x003241    program   0x000000
+        .romdata___init.o    romdata   0x003241    program   0x000000
+        .idata_eeprom.o_i    romdata   0x003241    program   0x000000
+.romdata_usb_function_hid.o    romdata   0x003241    program   0x000000
+.idata_usb_function_hid.o_i    romdata   0x003241    program   0x000000
+    .romdata_usb_device.o    romdata   0x003241    program   0x000000
+    .idata_usb_device.o_i    romdata   0x003241    program   0x000000
+         .idata_c018i.o_i    romdata   0x003241    program   0x000000
+         .romdata_c018i.o    romdata   0x003241    program   0x000000
+.idata_usb_descriptors.o_i    romdata   0x003241    program   0x000000
+          .romdata_main.o    romdata   0x003241    program   0x000000
+             .stringtable    romdata   0x003241    program   0x000000
+  .code_usb_descriptors.o       code   0x003242    program   0x000000
+ .code_usb_function_hid.o       code   0x003242    program   0x000122
+            .code_c018i.o       code   0x003242    program   0x000000
+                     PROG       code   0x003364    program   0x0000da
+               _cinit_scn       code   0x00343e    program   0x00009e
+           .code_eeprom.o       code   0x0034dc    program   0x00005c
+                   STRING       code   0x003538    program   0x000050
+         .code_fxd1616u.o       code   0x003588    program   0x00002c
+                    .code       code   0x0035b4    program   0x000020
+             _startup_scn       code   0x0035d4    program   0x00001c
+         .code_fxd0808u.o       code   0x0035f0    program   0x00001c
+          .idata_main.o_i    romdata   0x00360c    program   0x00009b
+    .config_300000_main.o    romdata   0x300000    program   0x000001
+    .config_300001_main.o    romdata   0x300001    program   0x000001
+    .config_300002_main.o    romdata   0x300002    program   0x000001
+    .config_300003_main.o    romdata   0x300003    program   0x000001
+    .config_300005_main.o    romdata   0x300005    program   0x000001
+    .config_300006_main.o    romdata   0x300006    program   0x000001
+    .config_300008_main.o    romdata   0x300008    program   0x000001
+    .config_300009_main.o    romdata   0x300009    program   0x000001
+    .config_30000a_main.o    romdata   0x30000a    program   0x000001
+    .config_30000b_main.o    romdata   0x30000b    program   0x000001
+    .config_30000c_main.o    romdata   0x30000c    program   0x000001
+    .config_30000d_main.o    romdata   0x30000d    program   0x000001
+                MATH_DATA      udata   0x000000       data   0x000014
+YourLowPriorityISRCode_tmp      udata   0x000014       data   0x00000b
+                 .tmpdata      udata   0x00001f       data   0x00000b
+            .idata_main.o      idata   0x000060       data   0x00009b
+.udata_usb_function_hid.o      udata   0x0000fb       data   0x000002
+          .idata___init.o      idata   0x0000fd       data   0x000000
+          .udata___init.o      udata   0x0000fd       data   0x000000
+        .idata_fxd1616u.o      idata   0x0000fd       data   0x000000
+        .udata_fxd1616u.o      udata   0x0000fd       data   0x000000
+        .idata_fxd0808u.o      idata   0x0000fd       data   0x000000
+        .udata_fxd0808u.o      udata   0x0000fd       data   0x000000
+          .idata_eeprom.o      idata   0x0000fd       data   0x000000
+          .udata_eeprom.o      udata   0x0000fd       data   0x000000
+.idata_usb_function_hid.o      idata   0x0000fd       data   0x000000
+      .idata_usb_device.o      idata   0x0000fd       data   0x000000
+           .idata_c018i.o      idata   0x0000fd       data   0x000000
+ .udata_usb_descriptors.o      udata   0x0000fd       data   0x000000
+ .idata_usb_descriptors.o      idata   0x0000fd       data   0x000000
+                   .stack      udata   0x000100       data   0x000040
+            .udata_main.o      udata   0x000140       data   0x000062
+      .udata_usb_device.o      udata   0x0001a2       data   0x000040
+           .udata_c018i.o      udata   0x0001e2       data   0x00000a
+                  USB_BDT      udata   0x000200       data   0x000069
+                  usbram2      udata   0x000269       data   0x000090
+              SFR_BANKED0      udata   0x000f53       data   0x00000d
+            SFR_UNBANKED0      udata   0x000f60       data   0x0000a0
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000008    0x00000d      
+                            0x000018    0x00001d      
+                            0x001000    0x00100d      
+                            0x001018    0x003240      
+                            0x003242    0x0036a6      
+                            0x300000    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x30000d      
+            9914 out of 16408 program addresses used, program memory utilization is 60%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   D0808S   0x00337a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808s.asm
+                D0808SNEG   0x003388    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808s.asm
+                 D0808SOK   0x003384    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808s.asm
+                  D0808SX   0x00338e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808s.asm
+                   D1616S   0x0033ba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x0033c8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x0033c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x0033da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA0808S   0x003370    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808s.asm
+                  DA1616S   0x0033aa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXD0808S   0x003364    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808s.asm
+                 FXD0808U   0x0035f0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808u.c
+                 FXD1616S   0x003398    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXD1616U   0x003588    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                 FXM1616S   0x0033e4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+                 High_ISR   0x000008    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+         InitializeSystem   0x00156a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  Low_ISR   0x000018    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                ProcessIO   0x0017ce    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               ReadEEPROM   0x0034dc    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\eeprom.c
+        Remapped_High_ISR   0x001008    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+         Remapped_Low_ISR   0x001018    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               TSIGN1616A   0x003430    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+       USBCBCheckOtherReq   0x0020ec    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+        USBCBErrorHandler   0x0020ea    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              USBCBInitEP   0x0020f2    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+          USBCBSendResume   0x002110    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+    USBCBStdSetDscHandler   0x0020f0    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+             USBCBSuspend   0x0020e4    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+     USBCBWakeFromSuspend   0x0020e6    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+        USBCB_SOF_Handler   0x0020e8    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              USBCancelIO   0x002696    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+       USBCheckHIDRequest   0x003242    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\HID Device Driver\usb_function_hid.c
+       USBCheckStdRequest   0x002c60    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+     USBConfigureEndpoint   0x002754    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+  USBCtrlEPAllowDataStage   0x002716    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+USBCtrlEPAllowStatusStage   0x0026ca    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+         USBCtrlEPService   0x002b08    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+ USBCtrlEPServiceComplete   0x0027b0    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+      USBCtrlTrfInHandler   0x002be6    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+     USBCtrlTrfOutHandler   0x002bc8    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+      USBCtrlTrfRxService   0x00288a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+   USBCtrlTrfSetupHandler   0x002b92    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+      USBCtrlTrfTxService   0x00280a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+            USBDeviceInit   0x00239e    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+           USBDeviceTasks   0x002468    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+        USBEnableEndpoint   0x002592    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+         USBStallEndpoint   0x002666    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+          USBStallHandler   0x002aba    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+  USBStdFeatureReqHandler   0x002d08    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+      USBStdGetDscHandler   0x0029ca    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+   USBStdGetStatusHandler   0x002a44    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+      USBStdSetCfgHandler   0x002952    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+               USBSuspend   0x002adc    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+     USBTransferOnePacket   0x0025da    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+       USBWakeFromSuspend   0x002af0    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+               USB_CD_Ptr   0x003239    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+               USB_SD_Ptr   0x00323b    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+USER_USB_CALLBACK_EVENT_HANDLER   0x00212c    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                 UserInit   0x001574    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              WriteEEPROM   0x0034f8    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\eeprom.c
+  YourHighPriorityISRCode   0x00102c    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+   YourLowPriorityISRCode   0x00103a    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              _2jContinue   0x003558    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x003562    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+           ___?:_lbl00081   0x0013ec    program     static                          
+           ___?:_lbl00082   0x0013ea    program     static                          
+     ___case_114_lbl00244   0x0021b0    program     static                          
+     ___case_115_lbl00240   0x0021a0    program     static                          
+     ___case_116_lbl00242   0x0021a8    program     static                          
+     ___case_117_lbl00241   0x0021a4    program     static                          
+       ___case_1_lbl00237   0x002194    program     static                          
+       ___case_2_lbl00238   0x002198    program     static                          
+   ___case_32767_lbl00243   0x0021ac    program     static                          
+       ___case_3_lbl00239   0x00219c    program     static                          
+      ___default_lbl00245   0x0021b4    program     static                          
+         ___else_lbl00008   0x00114a    program     static                          
+         ___else_lbl00010   0x001158    program     static                          
+         ___else_lbl00012   0x001166    program     static                          
+         ___else_lbl00014   0x001174    program     static                          
+         ___else_lbl00016   0x001182    program     static                          
+         ___else_lbl00018   0x001190    program     static                          
+         ___else_lbl00020   0x0011aa    program     static                          
+         ___else_lbl00022   0x0011b8    program     static                          
+         ___else_lbl00024   0x0011c6    program     static                          
+         ___else_lbl00026   0x0011d4    program     static                          
+         ___else_lbl00028   0x0011e2    program     static                          
+         ___else_lbl00030   0x0011f0    program     static                          
+         ___else_lbl00032   0x00120a    program     static                          
+         ___else_lbl00034   0x001218    program     static                          
+         ___else_lbl00036   0x001226    program     static                          
+         ___else_lbl00038   0x001234    program     static                          
+         ___else_lbl00040   0x001242    program     static                          
+         ___else_lbl00042   0x001250    program     static                          
+         ___else_lbl00044   0x00126a    program     static                          
+         ___else_lbl00046   0x001278    program     static                          
+         ___else_lbl00048   0x001286    program     static                          
+         ___else_lbl00050   0x001294    program     static                          
+         ___else_lbl00052   0x0012a2    program     static                          
+         ___else_lbl00054   0x0012b0    program     static                          
+         ___else_lbl00056   0x0012ca    program     static                          
+         ___else_lbl00058   0x0012d8    program     static                          
+         ___else_lbl00060   0x0012e6    program     static                          
+         ___else_lbl00062   0x0012f4    program     static                          
+         ___else_lbl00064   0x001302    program     static                          
+         ___else_lbl00066   0x001310    program     static                          
+         ___else_lbl00068   0x00132a    program     static                          
+         ___else_lbl00070   0x001338    program     static                          
+         ___else_lbl00072   0x001346    program     static                          
+         ___else_lbl00074   0x001354    program     static                          
+         ___else_lbl00076   0x001362    program     static                          
+         ___else_lbl00078   0x001370    program     static                          
+         ___else_lbl00088   0x00148c    program     static                          
+          ___for_lbl00079   0x00150a    program     static                          
+          ___for_lbl00080   0x001510    program     static                          
+          ___for_lbl00089   0x00137a    program     static                          
+           ___if_lbl00007   0x00114e    program     static                          
+           ___if_lbl00009   0x00115c    program     static                          
+           ___if_lbl00011   0x00116a    program     static                          
+           ___if_lbl00013   0x001178    program     static                          
+           ___if_lbl00015   0x001186    program     static                          
+           ___if_lbl00017   0x001194    program     static                          
+           ___if_lbl00019   0x0011ae    program     static                          
+           ___if_lbl00021   0x0011bc    program     static                          
+           ___if_lbl00023   0x0011ca    program     static                          
+           ___if_lbl00025   0x0011d8    program     static                          
+           ___if_lbl00027   0x0011e6    program     static                          
+           ___if_lbl00029   0x0011f4    program     static                          
+           ___if_lbl00031   0x00120e    program     static                          
+           ___if_lbl00033   0x00121c    program     static                          
+           ___if_lbl00035   0x00122a    program     static                          
+           ___if_lbl00037   0x001238    program     static                          
+           ___if_lbl00039   0x001246    program     static                          
+           ___if_lbl00041   0x001254    program     static                          
+           ___if_lbl00043   0x00126e    program     static                          
+           ___if_lbl00045   0x00127c    program     static                          
+           ___if_lbl00047   0x00128a    program     static                          
+           ___if_lbl00049   0x001298    program     static                          
+           ___if_lbl00051   0x0012a6    program     static                          
+           ___if_lbl00053   0x0012b4    program     static                          
+           ___if_lbl00055   0x0012ce    program     static                          
+           ___if_lbl00057   0x0012dc    program     static                          
+           ___if_lbl00059   0x0012ea    program     static                          
+           ___if_lbl00061   0x0012f8    program     static                          
+           ___if_lbl00063   0x001306    program     static                          
+           ___if_lbl00065   0x001314    program     static                          
+           ___if_lbl00067   0x00132e    program     static                          
+           ___if_lbl00069   0x00133c    program     static                          
+           ___if_lbl00071   0x00134a    program     static                          
+           ___if_lbl00073   0x001358    program     static                          
+           ___if_lbl00075   0x001366    program     static                          
+           ___if_lbl00077   0x001374    program     static                          
+           ___if_lbl00083   0x001442    program     static                          
+           ___if_lbl00084   0x00148a    program     static                          
+           ___if_lbl00085   0x0014c8    program     static                          
+           ___if_lbl00086   0x00150a    program     static                          
+           ___if_lbl00087   0x00150a    program     static                          
+           ___if_lbl00090   0x001510    program     static                          
+       ___return_lbl00000   0x00360a    program     static                          
+       ___return_lbl00000   0x001004    program     static                          
+       ___return_lbl00000   0x0035b2    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00001   0x00100c    program     static                          
+       ___return_lbl00001   0x0035ee    program     static                          
+       ___return_lbl00002   0x00101c    program     static                          
+       ___return_lbl00002   0x0034da    program     static                          
+       ___return_lbl00003   0x00000c    program     static                          
+       ___return_lbl00004   0x00001c    program     static                          
+       ___return_lbl00006   0x001510    program     static                          
+       ___return_lbl00235   0x0021ba    program     static                          
+   ___switchexit_lbl00236   0x0021b6    program     static                          
+               __config_0   0x300000    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_1   0x300001    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              __config_10   0x30000c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              __config_11   0x30000d    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_2   0x300002    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_3   0x300003    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_4   0x300005    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_5   0x300006    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_6   0x300008    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_7   0x300009    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_8   0x30000a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_9   0x30000b    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __init   0x001006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+                   __pa_0   0x002e32    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_0   0x0021c2    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_1   0x002e3a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_1   0x0021de    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_10   0x002e98    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_10   0x00227a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_11   0x002ea8    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_11   0x00228c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_12   0x002eb2    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_12   0x00229a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_13   0x0022aa    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_13   0x002ec6    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_14   0x002eda    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_14   0x0022b4    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_15   0x002ee6    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_15   0x0022c4    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_16   0x002f00    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_16   0x0022ce    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_17   0x002f0c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_17   0x0022e6    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_18   0x002f18    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_18   0x0022f2    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_19   0x002f20    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_19   0x002300    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_2   0x002202    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_2   0x002e44    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_20   0x00230c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_20   0x002f28    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_21   0x002f34    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_21   0x002314    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_22   0x002f44    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_22   0x00231c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_23   0x002f54    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_23   0x00232a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_24   0x002f64    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_24   0x002334    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_25   0x00233a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_25   0x002f72    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_26   0x002340    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_26   0x002f80    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_27   0x002350    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_27   0x002f8e    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_28   0x00235e    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_28   0x002f9c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_29   0x002368    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_29   0x002fa6    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_3   0x002218    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_3   0x002e4c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_30   0x002372    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_30   0x002fbe    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_31   0x002fca    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_31   0x00237e    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_32   0x00238a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_32   0x002fd2    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_33   0x002fe6    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_33   0x002396    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_34   0x002ff8    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_35   0x003006    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_36   0x003010    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_37   0x00301a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_38   0x003020    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_39   0x003028    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_4   0x002228    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_4   0x002e56    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_40   0x00302e    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_41   0x00303c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_42   0x00304a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_43   0x003058    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_44   0x003062    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_45   0x00306c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_46   0x003074    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_47   0x003080    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_48   0x00308a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_5   0x002e60    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_5   0x002244    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_6   0x002e6a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_6   0x00224e    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_7   0x002e72    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_7   0x002256    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_8   0x002e82    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_8   0x00225c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_9   0x002e8c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_9   0x00226c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              __tmplbl_13   0x002148    program     static                          
+              __tmplbl_14   0x002154    program     static                          
+              __tmplbl_15   0x00215e    program     static                          
+              __tmplbl_16   0x002168    program     static                          
+              __tmplbl_17   0x002172    program     static                          
+              __tmplbl_18   0x00217c    program     static                          
+              __tmplbl_19   0x002186    program     static                          
+              __tmplbl_20   0x002190    program     static                          
+              __tmplbl_21   0x00138e    program     static                          
+              __tmplbl_24   0x002e6a    program     static                          
+              __tmplbl_27   0x0020d0    program     static                          
+              __tmplbl_28   0x0020d0    program     static                          
+              __tmplbl_34   0x002e6a    program     static                          
+              __tmplbl_37   0x002e6a    program     static                          
+              __tmplbl_38   0x002e6a    program     static                          
+            __zero_memory   0x0035b4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                _do_cinit   0x00343e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                   _reset   0x001000    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                 _startup   0x0035d4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                compare_l   0x0035ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+        configDescriptor1   0x0030a4    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                copy_loop   0x0034b0    program     static                          
+            copy_one_byte   0x0034b6    program     static                          
+               device_dsc   0x003092    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                     done   0x0034da    program     static                          
+             done_copying   0x0034c4    program     static                          
+                  endloop   0x003606    program     static                          
+                  endloop   0x0035ae    program     static                          
+                hid_rpt01   0x003126    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                hid_rpt02   0x00315a    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                hid_rpt03   0x00318b    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                hid_rpt04   0x0031ca    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                     jEnd   0x003586    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                     jEnd   0x00356a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    jLoop   0x00354c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    jLoop   0x00357c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                     loop   0x003592    program     static                          
+                     loop   0x0035e4    program     static                          
+                     loop   0x0035f8    program     static                          
+                   loop_h   0x0035c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   loop_l   0x0035cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     main   0x001560    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   memset   0x003538    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    sd000   0x0031e7    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                    sd001   0x0031eb    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                    sd002   0x003211    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                   strlen   0x00356c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                     test   0x003458    program     static                          
+               zero_block   0x0035c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    ANSEL   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   ANSELH   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               ANSELHbits   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                ANSELbits   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                      BDT   0x000200       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+       BothEP0OutUOWNsSet   0x0001d1       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  CM1CON0   0x000f6d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              CM1CON0bits   0x000f6d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  CM2CON0   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              CM2CON0bits   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  CM2CON1   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              CM2CON1bits   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              CtrlTrfData   0x000258       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                EEADRbits   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     IOCA   0x000f79       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 IOCAbits   0x000f79       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     IOCB   0x000f7a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 IOCBbits   0x000f7a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  OSCCON2   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              OSCCON2bits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  PSTRCON   0x000fb9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              PSTRCONbits   0x000fb9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  PWM1CON   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              PWM1CONbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  REFCON0   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              REFCON0bits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  REFCON1   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              REFCON1bits   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  REFCON2   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              REFCON2bits   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+       ReceivedDataBuffer   0x000279       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+             RemoteWakeup   0x0001cd       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                     SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                   SLRCON   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               SLRCONbits   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   SPBRGH   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   SRCON0   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               SRCON0bits   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   SRCON1   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               SRCON1bits   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   SSPMSK   0x000f6f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               SSPMSKbits   0x000f6f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 SetupPkt   0x000250       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+         ToSendDataBuffer   0x0002b9       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                    UADDR   0x000f5c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                UADDRbits   0x000f5c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UCFG   0x000f61       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UCFGbits   0x000f61       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UCON   0x000f64       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UCONbits   0x000f64       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEIE   0x000f5b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEIEbits   0x000f5b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEIR   0x000f5f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEIRbits   0x000f5f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEP0   0x000f53       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP0bits   0x000f53       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEP1   0x000f54       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP1bits   0x000f54       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEP2   0x000f55       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP2bits   0x000f55       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEP3   0x000f56       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP3bits   0x000f56       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEP4   0x000f57       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP4bits   0x000f57       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEP5   0x000f58       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP5bits   0x000f58       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEP6   0x000f59       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP6bits   0x000f59       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEP7   0x000f5a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP7bits   0x000f5a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    UFRMH   0x000f5e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                UFRMHbits   0x000f5e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    UFRML   0x000f5d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                UFRMLbits   0x000f5d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                      UIE   0x000f60       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  UIEbits   0x000f60       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                      UIR   0x000f62       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  UIRbits   0x000f62       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+   USBActiveConfiguration   0x0001a3       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+    USBAlternateInterface   0x0001a4       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+        USBBusIsSuspended   0x0001ce       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+USBDeferINDataStagePackets   0x0001e0       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+USBDeferOUTDataStagePackets   0x0001e1       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+USBDeferStatusStagePacket   0x0001dd       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+           USBDeviceState   0x0001a2       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+              USBInHandle   0x000076       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+             USBOutHandle   0x000074       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+USBStatusStageEnabledFlag1   0x0001de       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+USBStatusStageEnabledFlag2   0x0001df       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+USBStatusStageTimeoutCounter   0x0001dc       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                    USTAT   0x000f63       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                USTATbits   0x000f63       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                USTATcopy   0x0001cf       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                 VREFCON0   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+             VREFCON0bits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 VREFCON1   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+             VREFCON1bits   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 VREFCON2   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+             VREFCON2bits   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     WPUA   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 WPUAbits   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     WPUB   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 WPUBbits   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 __AARGB0   0x000009       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB7   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB0   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB3   0x00000b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                  __REMB0   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __TEMP   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB0   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB1   0x000012       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB2   0x000011       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB3   0x000010       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                  __tmp_0   0x00001f       data     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __tmp_0   0x00001f       data     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __tmp_2   0x000014       data     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+          active_protocol   0x0000fc       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\HID Device Driver\usb_function_hid.c
+    button_pressing_count   0x000158       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+             button_state   0x000078       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                c_version   0x000060       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+     controlTransferState   0x0001be       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                curr_byte   0x0001e5       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0001e7       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0001e9       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+              delay_count   0x0001a0       data     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+       eeprom_check_count   0x0000f7       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              eeprom_data   0x00008a       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+     eeprom_smpl_interval   0x0000f6       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+          endpoint_number   0x0001d0       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+               ep_data_in   0x0001d2       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+              ep_data_out   0x0001d7       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+               hid_report   0x000271       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+            hid_report_in   0x000261       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+           hid_report_out   0x000260       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+      hid_report_out_flag   0x0000fa       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                idle_rate   0x0000fb       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\HID Device Driver\usb_function_hid.c
+                  inPipes   0x0001bf       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+          joystick_buffer   0x000144       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+           joystick_input   0x000269       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+  joystick_input_out_flag   0x0000f8       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+          keyboard_buffer   0x000148       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+lastINTransmissionKeyboard   0x000154       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+lastOUTTransmissionKeyboard   0x000156       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+         lastTransmission   0x000150       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+        lastTransmission2   0x000152       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+             mouse_buffer   0x000140       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              mouse_input   0x00026d       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+     mouse_input_out_flag   0x0000f9       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                 outPipes   0x0001c4       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+   pBDTEntryEP0OutCurrent   0x0001a5       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+      pBDTEntryEP0OutNext   0x0001a7       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+              pBDTEntryIn   0x0001b3       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+             pBDTEntryOut   0x0001a9       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                     pDst   0x0001cb       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                     prom   0x0001e2       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+        shortPacketStatus   0x0001bd       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+     temp_mouse_move_down   0x000080       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+     temp_mouse_move_left   0x000082       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+    temp_mouse_move_right   0x000084       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+       temp_mouse_move_up   0x00007e       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+    temp_mouse_wheel_down   0x000088       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+      temp_mouse_wheel_up   0x000086       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+       ___return_lbl00000   0x000004    program     static                          
+                 High_ISR   0x000008    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+       ___return_lbl00003   0x00000c    program     static                          
+                  Low_ISR   0x000018    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+       ___return_lbl00004   0x00001c    program     static                          
+                   _reset   0x001000    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+       ___return_lbl00000   0x001004    program     static                          
+                   __init   0x001006    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\__init.c
+        Remapped_High_ISR   0x001008    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+       ___return_lbl00001   0x00100c    program     static                          
+         Remapped_Low_ISR   0x001018    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+       ___return_lbl00002   0x00101c    program     static                          
+  YourHighPriorityISRCode   0x00102c    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+   YourLowPriorityISRCode   0x00103a    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+         ___else_lbl00008   0x00114a    program     static                          
+           ___if_lbl00007   0x00114e    program     static                          
+         ___else_lbl00010   0x001158    program     static                          
+           ___if_lbl00009   0x00115c    program     static                          
+         ___else_lbl00012   0x001166    program     static                          
+           ___if_lbl00011   0x00116a    program     static                          
+         ___else_lbl00014   0x001174    program     static                          
+           ___if_lbl00013   0x001178    program     static                          
+         ___else_lbl00016   0x001182    program     static                          
+           ___if_lbl00015   0x001186    program     static                          
+         ___else_lbl00018   0x001190    program     static                          
+           ___if_lbl00017   0x001194    program     static                          
+         ___else_lbl00020   0x0011aa    program     static                          
+           ___if_lbl00019   0x0011ae    program     static                          
+         ___else_lbl00022   0x0011b8    program     static                          
+           ___if_lbl00021   0x0011bc    program     static                          
+         ___else_lbl00024   0x0011c6    program     static                          
+           ___if_lbl00023   0x0011ca    program     static                          
+         ___else_lbl00026   0x0011d4    program     static                          
+           ___if_lbl00025   0x0011d8    program     static                          
+         ___else_lbl00028   0x0011e2    program     static                          
+           ___if_lbl00027   0x0011e6    program     static                          
+         ___else_lbl00030   0x0011f0    program     static                          
+           ___if_lbl00029   0x0011f4    program     static                          
+         ___else_lbl00032   0x00120a    program     static                          
+           ___if_lbl00031   0x00120e    program     static                          
+         ___else_lbl00034   0x001218    program     static                          
+           ___if_lbl00033   0x00121c    program     static                          
+         ___else_lbl00036   0x001226    program     static                          
+           ___if_lbl00035   0x00122a    program     static                          
+         ___else_lbl00038   0x001234    program     static                          
+           ___if_lbl00037   0x001238    program     static                          
+         ___else_lbl00040   0x001242    program     static                          
+           ___if_lbl00039   0x001246    program     static                          
+         ___else_lbl00042   0x001250    program     static                          
+           ___if_lbl00041   0x001254    program     static                          
+         ___else_lbl00044   0x00126a    program     static                          
+           ___if_lbl00043   0x00126e    program     static                          
+         ___else_lbl00046   0x001278    program     static                          
+           ___if_lbl00045   0x00127c    program     static                          
+         ___else_lbl00048   0x001286    program     static                          
+           ___if_lbl00047   0x00128a    program     static                          
+         ___else_lbl00050   0x001294    program     static                          
+           ___if_lbl00049   0x001298    program     static                          
+         ___else_lbl00052   0x0012a2    program     static                          
+           ___if_lbl00051   0x0012a6    program     static                          
+         ___else_lbl00054   0x0012b0    program     static                          
+           ___if_lbl00053   0x0012b4    program     static                          
+         ___else_lbl00056   0x0012ca    program     static                          
+           ___if_lbl00055   0x0012ce    program     static                          
+         ___else_lbl00058   0x0012d8    program     static                          
+           ___if_lbl00057   0x0012dc    program     static                          
+         ___else_lbl00060   0x0012e6    program     static                          
+           ___if_lbl00059   0x0012ea    program     static                          
+         ___else_lbl00062   0x0012f4    program     static                          
+           ___if_lbl00061   0x0012f8    program     static                          
+         ___else_lbl00064   0x001302    program     static                          
+           ___if_lbl00063   0x001306    program     static                          
+         ___else_lbl00066   0x001310    program     static                          
+           ___if_lbl00065   0x001314    program     static                          
+         ___else_lbl00068   0x00132a    program     static                          
+           ___if_lbl00067   0x00132e    program     static                          
+         ___else_lbl00070   0x001338    program     static                          
+           ___if_lbl00069   0x00133c    program     static                          
+         ___else_lbl00072   0x001346    program     static                          
+           ___if_lbl00071   0x00134a    program     static                          
+         ___else_lbl00074   0x001354    program     static                          
+           ___if_lbl00073   0x001358    program     static                          
+         ___else_lbl00076   0x001362    program     static                          
+           ___if_lbl00075   0x001366    program     static                          
+         ___else_lbl00078   0x001370    program     static                          
+           ___if_lbl00077   0x001374    program     static                          
+          ___for_lbl00089   0x00137a    program     static                          
+              __tmplbl_21   0x00138e    program     static                          
+           ___?:_lbl00082   0x0013ea    program     static                          
+           ___?:_lbl00081   0x0013ec    program     static                          
+           ___if_lbl00083   0x001442    program     static                          
+           ___if_lbl00084   0x00148a    program     static                          
+         ___else_lbl00088   0x00148c    program     static                          
+           ___if_lbl00085   0x0014c8    program     static                          
+          ___for_lbl00079   0x00150a    program     static                          
+           ___if_lbl00087   0x00150a    program     static                          
+           ___if_lbl00086   0x00150a    program     static                          
+          ___for_lbl00080   0x001510    program     static                          
+       ___return_lbl00006   0x001510    program     static                          
+           ___if_lbl00090   0x001510    program     static                          
+                     main   0x001560    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+         InitializeSystem   0x00156a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                 UserInit   0x001574    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                ProcessIO   0x0017ce    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              __tmplbl_27   0x0020d0    program     static                          
+              __tmplbl_28   0x0020d0    program     static                          
+             USBCBSuspend   0x0020e4    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+     USBCBWakeFromSuspend   0x0020e6    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+        USBCB_SOF_Handler   0x0020e8    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+        USBCBErrorHandler   0x0020ea    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+       USBCBCheckOtherReq   0x0020ec    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+    USBCBStdSetDscHandler   0x0020f0    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              USBCBInitEP   0x0020f2    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+          USBCBSendResume   0x002110    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+USER_USB_CALLBACK_EVENT_HANDLER   0x00212c    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              __tmplbl_13   0x002148    program     static                          
+              __tmplbl_14   0x002154    program     static                          
+              __tmplbl_15   0x00215e    program     static                          
+              __tmplbl_16   0x002168    program     static                          
+              __tmplbl_17   0x002172    program     static                          
+              __tmplbl_18   0x00217c    program     static                          
+              __tmplbl_19   0x002186    program     static                          
+              __tmplbl_20   0x002190    program     static                          
+       ___case_1_lbl00237   0x002194    program     static                          
+       ___case_2_lbl00238   0x002198    program     static                          
+       ___case_3_lbl00239   0x00219c    program     static                          
+     ___case_115_lbl00240   0x0021a0    program     static                          
+     ___case_117_lbl00241   0x0021a4    program     static                          
+     ___case_116_lbl00242   0x0021a8    program     static                          
+   ___case_32767_lbl00243   0x0021ac    program     static                          
+     ___case_114_lbl00244   0x0021b0    program     static                          
+      ___default_lbl00245   0x0021b4    program     static                          
+   ___switchexit_lbl00236   0x0021b6    program     static                          
+       ___return_lbl00235   0x0021ba    program     static                          
+                   __pa_0   0x0021c2    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_1   0x0021de    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_2   0x002202    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_3   0x002218    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_4   0x002228    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_5   0x002244    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_6   0x00224e    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_7   0x002256    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_8   0x00225c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                   __pa_9   0x00226c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_10   0x00227a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_11   0x00228c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_12   0x00229a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_13   0x0022aa    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_14   0x0022b4    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_15   0x0022c4    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_16   0x0022ce    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_17   0x0022e6    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_18   0x0022f2    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_19   0x002300    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_20   0x00230c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_21   0x002314    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_22   0x00231c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_23   0x00232a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_24   0x002334    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_25   0x00233a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_26   0x002340    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_27   0x002350    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_28   0x00235e    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_29   0x002368    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_30   0x002372    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_31   0x00237e    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_32   0x00238a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __pa_33   0x002396    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+            USBDeviceInit   0x00239e    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+           USBDeviceTasks   0x002468    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+        USBEnableEndpoint   0x002592    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+     USBTransferOnePacket   0x0025da    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+         USBStallEndpoint   0x002666    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+              USBCancelIO   0x002696    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+USBCtrlEPAllowStatusStage   0x0026ca    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+  USBCtrlEPAllowDataStage   0x002716    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+     USBConfigureEndpoint   0x002754    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+ USBCtrlEPServiceComplete   0x0027b0    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+      USBCtrlTrfTxService   0x00280a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+      USBCtrlTrfRxService   0x00288a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+      USBStdSetCfgHandler   0x002952    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+      USBStdGetDscHandler   0x0029ca    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+   USBStdGetStatusHandler   0x002a44    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+          USBStallHandler   0x002aba    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+               USBSuspend   0x002adc    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+       USBWakeFromSuspend   0x002af0    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+         USBCtrlEPService   0x002b08    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+   USBCtrlTrfSetupHandler   0x002b92    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+     USBCtrlTrfOutHandler   0x002bc8    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+      USBCtrlTrfInHandler   0x002be6    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+       USBCheckStdRequest   0x002c60    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+  USBStdFeatureReqHandler   0x002d08    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_0   0x002e32    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_1   0x002e3a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_2   0x002e44    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_3   0x002e4c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_4   0x002e56    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_5   0x002e60    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_6   0x002e6a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+              __tmplbl_38   0x002e6a    program     static                          
+              __tmplbl_37   0x002e6a    program     static                          
+              __tmplbl_34   0x002e6a    program     static                          
+              __tmplbl_24   0x002e6a    program     static                          
+                   __pa_7   0x002e72    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_8   0x002e82    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                   __pa_9   0x002e8c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_10   0x002e98    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_11   0x002ea8    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_12   0x002eb2    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_13   0x002ec6    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_14   0x002eda    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_15   0x002ee6    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_16   0x002f00    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_17   0x002f0c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_18   0x002f18    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_19   0x002f20    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_20   0x002f28    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_21   0x002f34    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_22   0x002f44    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_23   0x002f54    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_24   0x002f64    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_25   0x002f72    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_26   0x002f80    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_27   0x002f8e    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_28   0x002f9c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_29   0x002fa6    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_30   0x002fbe    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_31   0x002fca    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_32   0x002fd2    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_33   0x002fe6    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_34   0x002ff8    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_35   0x003006    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_36   0x003010    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_37   0x00301a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_38   0x003020    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_39   0x003028    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_40   0x00302e    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_41   0x00303c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_42   0x00304a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_43   0x003058    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_44   0x003062    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_45   0x00306c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_46   0x003074    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_47   0x003080    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __pa_48   0x00308a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+               device_dsc   0x003092    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+        configDescriptor1   0x0030a4    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                hid_rpt01   0x003126    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                hid_rpt02   0x00315a    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                hid_rpt03   0x00318b    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                hid_rpt04   0x0031ca    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                    sd000   0x0031e7    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                    sd001   0x0031eb    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+                    sd002   0x003211    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+               USB_CD_Ptr   0x003239    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+               USB_SD_Ptr   0x00323b    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\usb_descriptors.c
+       USBCheckHIDRequest   0x003242    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\HID Device Driver\usb_function_hid.c
+                 FXD0808S   0x003364    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808s.asm
+                  DA0808S   0x003370    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808s.asm
+                   D0808S   0x00337a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808s.asm
+                 D0808SOK   0x003384    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808s.asm
+                D0808SNEG   0x003388    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808s.asm
+                  D0808SX   0x00338e    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808s.asm
+                 FXD1616S   0x003398    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  DA1616S   0x0033aa    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                   D1616S   0x0033ba    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 D1616SOK   0x0033c4    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                D1616SNEG   0x0033c8    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                  D1616SX   0x0033da    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616s.asm
+                 FXM1616S   0x0033e4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+               TSIGN1616A   0x003430    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxm1616s.asm
+                _do_cinit   0x00343e    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     test   0x003458    program     static                          
+                copy_loop   0x0034b0    program     static                          
+            copy_one_byte   0x0034b6    program     static                          
+             done_copying   0x0034c4    program     static                          
+       ___return_lbl00002   0x0034da    program     static                          
+                     done   0x0034da    program     static                          
+               ReadEEPROM   0x0034dc    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\eeprom.c
+              WriteEEPROM   0x0034f8    program     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\eeprom.c
+                   memset   0x003538    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                    jLoop   0x00354c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+              _2jContinue   0x003558    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   _3jEnd   0x003562    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                     jEnd   0x00356a    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\memset.asm
+                   strlen   0x00356c    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                    jLoop   0x00357c    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                     jEnd   0x003586    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\stdclib\strlen.asm
+                 FXD1616U   0x003588    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd1616u.c
+                     loop   0x003592    program     static                          
+                  endloop   0x0035ae    program     static                          
+       ___return_lbl00000   0x0035b2    program     static                          
+            __zero_memory   0x0035b4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               zero_block   0x0035c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   loop_h   0x0035c2    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                compare_l   0x0035ca    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   loop_l   0x0035cc    program     static E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 _startup   0x0035d4    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                     loop   0x0035e4    program     static                          
+       ___return_lbl00001   0x0035ee    program     static                          
+                 FXD0808U   0x0035f0    program     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\fxd0808u.c
+                     loop   0x0035f8    program     static                          
+                  endloop   0x003606    program     static                          
+       ___return_lbl00000   0x00360a    program     static                          
+               __config_0   0x300000    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_1   0x300001    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_2   0x300002    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_3   0x300003    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_4   0x300005    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_5   0x300006    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_6   0x300008    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_7   0x300009    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_8   0x30000a    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               __config_9   0x30000b    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              __config_10   0x30000c    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              __config_11   0x30000d    program     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                     SIGN   0x000000       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                __FPFLAGS   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+            __FPFLAGSbits   0x000001       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\cmath18.asm
+                 __AARGB7   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB3   0x000002       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB6   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB2   0x000003       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB5   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB1   0x000004       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB4   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                  __REMB0   0x000005       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB3   0x000006       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB2   0x000007       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB1   0x000008       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __AARGB0   0x000009       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                   __AEXP   0x00000a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\aarg.asm
+                 __BARGB3   0x00000b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB2   0x00000c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB1   0x00000d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __BARGB0   0x00000e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                   __BEXP   0x00000f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\barg.asm
+                 __TEMPB3   0x000010       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB2   0x000011       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB1   0x000012       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                 __TEMPB0   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                   __TEMP   0x000013       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\math\temparg.asm
+                  __tmp_2   0x000014       data     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                  __tmp_0   0x00001f       data     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  __tmp_0   0x00001f       data     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                c_version   0x000060       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+             USBOutHandle   0x000074       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              USBInHandle   0x000076       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+             button_state   0x000078       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+       temp_mouse_move_up   0x00007e       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+     temp_mouse_move_down   0x000080       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+     temp_mouse_move_left   0x000082       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+    temp_mouse_move_right   0x000084       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+      temp_mouse_wheel_up   0x000086       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+    temp_mouse_wheel_down   0x000088       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              eeprom_data   0x00008a       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+     eeprom_smpl_interval   0x0000f6       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+       eeprom_check_count   0x0000f7       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+  joystick_input_out_flag   0x0000f8       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+     mouse_input_out_flag   0x0000f9       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+      hid_report_out_flag   0x0000fa       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                idle_rate   0x0000fb       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\HID Device Driver\usb_function_hid.c
+          active_protocol   0x0000fc       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\HID Device Driver\usb_function_hid.c
+             mouse_buffer   0x000140       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+          joystick_buffer   0x000144       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+          keyboard_buffer   0x000148       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+         lastTransmission   0x000150       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+        lastTransmission2   0x000152       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+lastINTransmissionKeyboard   0x000154       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+lastOUTTransmissionKeyboard   0x000156       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+    button_pressing_count   0x000158       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              delay_count   0x0001a0       data     static Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+           USBDeviceState   0x0001a2       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+   USBActiveConfiguration   0x0001a3       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+    USBAlternateInterface   0x0001a4       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+   pBDTEntryEP0OutCurrent   0x0001a5       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+      pBDTEntryEP0OutNext   0x0001a7       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+             pBDTEntryOut   0x0001a9       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+              pBDTEntryIn   0x0001b3       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+        shortPacketStatus   0x0001bd       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+     controlTransferState   0x0001be       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                  inPipes   0x0001bf       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                 outPipes   0x0001c4       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                     pDst   0x0001cb       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+             RemoteWakeup   0x0001cd       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+        USBBusIsSuspended   0x0001ce       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                USTATcopy   0x0001cf       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+          endpoint_number   0x0001d0       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+       BothEP0OutUOWNsSet   0x0001d1       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+               ep_data_in   0x0001d2       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+              ep_data_out   0x0001d7       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+USBStatusStageTimeoutCounter   0x0001dc       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+USBDeferStatusStagePacket   0x0001dd       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+USBStatusStageEnabledFlag1   0x0001de       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+USBStatusStageEnabledFlag2   0x0001df       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+USBDeferINDataStagePackets   0x0001e0       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+USBDeferOUTDataStagePackets   0x0001e1       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                     prom   0x0001e2       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                curr_byte   0x0001e5       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+               curr_entry   0x0001e7       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                 data_ptr   0x0001e9       data     static E:\3.46\pic18-lt\cxx-framework\src\traditional\startup\c018i.c
+                      BDT   0x000200       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+                 SetupPkt   0x000250       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+              CtrlTrfData   0x000258       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+           hid_report_out   0x000260       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+            hid_report_in   0x000261       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\Microchip\USB\usb_device.c
+           joystick_input   0x000269       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+              mouse_input   0x00026d       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+               hid_report   0x000271       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+       ReceivedDataBuffer   0x000279       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+         ToSendDataBuffer   0x0002b9       data     extern Z:\REVIVE_USB_MATRIX_Debounce\REVIVE_USB_FW_MATRIX_Debounce\main.c
+                     UEP0   0x000f53       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP0bits   0x000f53       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEP1   0x000f54       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP1bits   0x000f54       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEP2   0x000f55       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP2bits   0x000f55       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP3bits   0x000f56       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEP3   0x000f56       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP4bits   0x000f57       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEP4   0x000f57       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP5bits   0x000f58       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEP5   0x000f58       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEP6   0x000f59       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP6bits   0x000f59       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEP7   0x000f5a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEP7bits   0x000f5a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEIEbits   0x000f5b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEIE   0x000f5b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                UADDRbits   0x000f5c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    UADDR   0x000f5c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                UFRMLbits   0x000f5d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    UFRML   0x000f5d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    UFRMH   0x000f5e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                UFRMHbits   0x000f5e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UEIR   0x000f5f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UEIRbits   0x000f5f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                      UIE   0x000f60       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  UIEbits   0x000f60       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UCFGbits   0x000f61       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UCFG   0x000f61       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                      UIR   0x000f62       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  UIRbits   0x000f62       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                USTATbits   0x000f63       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    USTAT   0x000f63       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     UCON   0x000f64       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 UCONbits   0x000f64       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               SRCON0bits   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   SRCON0   0x000f68       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               SRCON1bits   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   SRCON1   0x000f69       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  CM2CON0   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              CM2CON0bits   0x000f6b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  CM2CON1   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              CM2CON1bits   0x000f6c       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              CM1CON0bits   0x000f6d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  CM1CON0   0x000f6d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               SSPMSKbits   0x000f6f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   SSPMSK   0x000f6f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               SLRCONbits   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   SLRCON   0x000f76       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 WPUAbits   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     WPUA   0x000f77       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 WPUBbits   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     WPUB   0x000f78       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     IOCA   0x000f79       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 IOCAbits   0x000f79       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     IOCB   0x000f7a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 IOCBbits   0x000f7a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                ANSELbits   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    ANSEL   0x000f7e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               ANSELHbits   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   ANSELH   0x000f7f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    PORTA   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                PORTAbits   0x000f80       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    PORTB   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                PORTBbits   0x000f81       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    PORTC   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                PORTCbits   0x000f82       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 LATAbits   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     LATA   0x000f89       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 LATBbits   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     LATB   0x000f8a       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 LATCbits   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     LATC   0x000f8b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                TRISAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TRISA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 DDRAbits   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     DDRA   0x000f92       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     DDRB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 DDRBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                TRISBbits   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TRISB   0x000f93       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     DDRC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 DDRCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                TRISCbits   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TRISC   0x000f94       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  OSCTUNE   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              OSCTUNEbits   0x000f9b       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 PIE1bits   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     PIE1   0x000f9d       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 PIR1bits   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     PIR1   0x000f9e       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 IPR1bits   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     IPR1   0x000f9f       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 PIE2bits   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     PIE2   0x000fa0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 PIR2bits   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     PIR2   0x000fa1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 IPR2bits   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     IPR2   0x000fa2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               EECON1bits   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   EECON1   0x000fa6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   EECON2   0x000fa7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   EEDATA   0x000fa8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    EEADR   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                EEADRbits   0x000fa9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                RCSTAbits   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    RCSTA   0x000fab       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                TXSTAbits   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TXSTA   0x000fac       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TXREG   0x000fad       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    RCREG   0x000fae       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    SPBRG   0x000faf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   SPBRGH   0x000fb0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    T3CON   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                T3CONbits   0x000fb1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TMR3L   0x000fb2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TMR3H   0x000fb3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  ECCP1AS   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              ECCP1ASbits   0x000fb6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  PWM1CON   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              PWM1CONbits   0x000fb7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              BAUDCONbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  BAUDCON   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              BAUDCTLbits   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  BAUDCTL   0x000fb8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  PSTRCON   0x000fb9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              PSTRCONbits   0x000fb9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 VREFCON0   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+             VREFCON0bits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              REFCON0bits   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  REFCON0   0x000fba       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  REFCON1   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              REFCON1bits   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+             VREFCON1bits   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 VREFCON1   0x000fbb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  REFCON2   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              REFCON2bits   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+             VREFCON2bits   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 VREFCON2   0x000fbc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  CCP1CON   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              CCP1CONbits   0x000fbd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    CCPR1   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   CCPR1L   0x000fbe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   CCPR1H   0x000fbf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   ADCON2   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               ADCON2bits   0x000fc0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   ADCON1   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               ADCON1bits   0x000fc1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   ADCON0   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               ADCON0bits   0x000fc2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    ADRES   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   ADRESL   0x000fc3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   ADRESH   0x000fc4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              SSPCON2bits   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  SSPCON2   0x000fc5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  SSPCON1   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              SSPCON1bits   0x000fc6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              SSPSTATbits   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  SSPSTAT   0x000fc7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   SSPADD   0x000fc8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   SSPBUF   0x000fc9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                T2CONbits   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    T2CON   0x000fca       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                      PR2   0x000fcb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     TMR2   0x000fcc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                T1CONbits   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    T1CON   0x000fcd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TMR1L   0x000fce       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TMR1H   0x000fcf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 RCONbits   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     RCON   0x000fd0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   WDTCON   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               WDTCONbits   0x000fd1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  OSCCON2   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              OSCCON2bits   0x000fd2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   OSCCON   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               OSCCONbits   0x000fd3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    T0CON   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                T0CONbits   0x000fd5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TMR0L   0x000fd6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    TMR0H   0x000fd7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   STATUS   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               STATUSbits   0x000fd8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     FSR2   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    FSR2L   0x000fd9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    FSR2H   0x000fda       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   PLUSW2   0x000fdb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  PREINC2   0x000fdc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 POSTDEC2   0x000fdd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 POSTINC2   0x000fde       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    INDF2   0x000fdf       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                      BSR   0x000fe0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    FSR1L   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     FSR1   0x000fe1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    FSR1H   0x000fe2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   PLUSW1   0x000fe3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  PREINC1   0x000fe4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 POSTDEC1   0x000fe5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 POSTINC1   0x000fe6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    INDF1   0x000fe7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     WREG   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                        W   0x000fe8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     FSR0   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    FSR0L   0x000fe9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    FSR0H   0x000fea       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   PLUSW0   0x000feb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  PREINC0   0x000fec       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 POSTDEC0   0x000fed       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                 POSTINC0   0x000fee       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    INDF0   0x000fef       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  INTCON3   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              INTCON3bits   0x000ff0       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  INTCON2   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+              INTCON2bits   0x000ff1       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               INTCONbits   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   INTCON   0x000ff2       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     PROD   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    PRODL   0x000ff3       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                    PRODH   0x000ff4       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   TABLAT   0x000ff5       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  TBLPTRL   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   TBLPTR   0x000ff6       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  TBLPTRH   0x000ff7       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                  TBLPTRU   0x000ff8       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                      PCL   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                       PC   0x000ff9       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   PCLATH   0x000ffa       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   PCLATU   0x000ffb       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+               STKPTRbits   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                   STKPTR   0x000ffc       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                      TOS   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     TOSL   0x000ffd       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     TOSH   0x000ffe       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+                     TOSU   0x000fff       data     extern E:\3.46\pic18-lt\cxx-framework\src\traditional\proc\p18f14k50.asm
+
+
