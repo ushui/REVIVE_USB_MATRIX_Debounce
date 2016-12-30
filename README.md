@@ -11,7 +11,7 @@ URL: <http://a-desk.jp/modules/forum_module/index.php?cat_id=3>
 
 1. 上記URLからファームウェア書き込みソフト「HIDBootLoader.exe」をダウンロードする。  
 
-2. このリポジトリから「[REVIVE_USB_MATRIX_Debounce_latest.zip](https://github.com/ushui/REVIVE_USB_Debounce/raw/master/REVIVE_USB_MATRIX_Debounce_latest.zip)」をダウンロードし、解凍する。  
+2. このリポジトリから「[REVIVE_USB_MATRIX_Debounce_latest.zip](https://github.com/ushui/REVIVE_USB_MATRIX_Debounce/raw/master/REVIVE_USB_MATRIX_Debounce_latest.zip)」をダウンロードし、解凍する。  
 「readme.txt」「REVIVE_USB_MATRIX_Debounce_FW.hex」「REVIVE_USB_MATRIX_Debounce_CT.exe」の3つのファイルが解凍される。  
 
 3. 手持ちのREVIVE USBのショートピンをBOOTにしてPCへ接続する。  
