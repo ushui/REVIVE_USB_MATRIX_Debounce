@@ -1866,7 +1866,7 @@ namespace HID_PnP_Demo
                     if (eeprom_data[SetPin_selected * Constants.NUM_OF_SETTINGS + 1] > Constants.SETTING_VALUE_MOUSE_MAX)
                         mousevalue_combx.SelectedIndex = 0;
                     else
-                        mousevalue_combx.SelectedIndex = mousevalue_combx.SelectedIndex = eeprom_data[SetPin_selected * Constants.NUM_OF_SETTINGS + 1];
+                        mousevalue_combx.SelectedIndex = eeprom_data[SetPin_selected * Constants.NUM_OF_SETTINGS + 1];
                     mousevalue_combx.Items.Remove("É_É~Å[");
 
                     break;
