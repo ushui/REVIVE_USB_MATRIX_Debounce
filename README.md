@@ -20,7 +20,7 @@ URL: <http://a-desk.jp/modules/forum_module/index.php?cat_id=3>
 ## 設定ツールについて
 「REVIVE USB MATRIX, Configuration Tool」にサンプリング周期と一致検出回数の設定項目を増やしたものです。  
 当ファームウェア以外では動作しません。  
-デフォルトでは「サンプリング周期＝10ms／一致検出回数＝3回」に設定していますが、必要であれば変更することができます（そのままでも使えます）。 。  
+デフォルトでは「サンプリング周期＝10ms／一致検出回数＝3回」に設定していますが、必要であれば変更することができます（そのままでも使えます）。   
 
 ![REVIVE USB MATRIX Debounce, Configuration Tool](https://raw.githubusercontent.com/ushui/REVIVE_USB_MATRIX_Debounce/master/revive_usb_matrix_debounce_ct.png)  
 ### サンプリング周期
