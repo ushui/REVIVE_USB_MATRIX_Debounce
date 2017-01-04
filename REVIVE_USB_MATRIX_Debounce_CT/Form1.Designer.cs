@@ -2459,6 +2459,7 @@ namespace HID_PnP_Demo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(878, 500);
+            this.Controls.Add(this.StatusBox_lbl2);
             this.Controls.Add(this.fw_version_lbl);
             this.Controls.Add(this.AllButtonSetting_grpbox);
             this.Controls.Add(this.SW36A_pb);
@@ -2575,7 +2576,6 @@ namespace HID_PnP_Demo
             this.Controls.Add(this.Pin05B_pb);
             this.Controls.Add(this.Pin06B_pb);
             this.Controls.Add(this.Pin07B_pb);
-            this.Controls.Add(this.StatusBox_lbl2);
             this.Controls.Add(this.StatusBox_lbl);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.Arrow_Com_pb);

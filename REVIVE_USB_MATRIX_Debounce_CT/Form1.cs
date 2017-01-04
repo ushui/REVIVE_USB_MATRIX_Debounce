@@ -1715,12 +1715,12 @@ namespace HID_PnP_Demo
                 }
                 if (StatusBoxChange != 99)
                 {
-                    StatusBox_lbl2.Text = "AllButtonSettingÇ[ " + 
+                    StatusBox_lbl2.Text = "ê›íËÇ[ " + 
                         eeprom_smpl_interval + "ms / " + 
-                        eeprom_check_count + "âÒ ]Ç…ÅA" + 
-                        SetPin_combox.Text + "Ç[ " + 
+                        eeprom_check_count + "âÒ ]" + 
+                        SetPin_combox.Text + "[ " + 
                         Button_list.Items[StatusBoxChange].SubItems[2].Text + " / " + 
-                        Button_list.Items[StatusBoxChange].SubItems[3].Text + " ]Ç…ê›íËÇµÇ‹ÇµÇΩ";
+                        Button_list.Items[StatusBoxChange].SubItems[3].Text + " ]Ç…ïœçXÇµÇ‹ÇµÇΩ";
                     StatusBoxChange = 99;
                 }
             }

@@ -1,5 +1,7 @@
 // USB HID core
 /*
+ * MATRIX Debounce Ver 1.1 (2016/01/04)
+ *   バッファオーバーフローが発生していたバグの修正。
  * MATRIX Debounce Ver 1.0 (2016/12/31)
  *   「REVIVE USB Debounce Ver 1.3」をベースに「REVIVE USB MATRIX ver 005」を参考にしてMATRIX版へ変更。
  */
@@ -124,7 +126,7 @@ void YourLowPriorityISRCode();
 
 /** VARIABLES ******************************************************/
 #pragma udata
-char c_version[]="MATRIX Debounce 1.0";
+char c_version[]="MD1.1";
 BYTE mouse_buffer[4];
 BYTE joystick_buffer[4];
 BYTE keyboard_buffer[8]; 
@@ -138,12 +140,26 @@ USB_HANDLE USBInHandle = 0;
 unsigned char button_state[6] = {0,0,0,0,0,0};
 unsigned char button_pressing_count[NUM_OF_PINS][2];
 
+char mouse_move_up;
+char mouse_move_down;
+char mouse_move_left;
+char mouse_move_right;
+char mouse_wheel_up;
+char mouse_wheel_down;
+
 int temp_mouse_move_up = 0;
 int temp_mouse_move_down = 0;
 int temp_mouse_move_left = 0;
 int temp_mouse_move_right = 0;
 int temp_mouse_wheel_up = 0;
 int temp_mouse_wheel_down = 0;
+
+unsigned char speed_mouse_move_up;
+unsigned char speed_mouse_move_down;
+unsigned char speed_mouse_move_left;
+unsigned char speed_mouse_move_right;
+unsigned char speed_mouse_wheel_up;
+unsigned char speed_mouse_wheel_down;
 
 //ボタンの設定用変数
 unsigned char eeprom_data[NUM_OF_PINS][NUM_OF_SETTINGS] = {
@@ -273,7 +289,7 @@ unsigned char ToSendDataBuffer[64];
 		//Service the interrupt
 		//Clear the interrupt flag
 		//Etc.
-		unsigned int timer_temp;
+		unsigned int timer_tmp;
 		char fi;
 		if(INTCONbits.TMR0IF == 1)
 		{
@@ -294,10 +310,10 @@ unsigned char ToSendDataBuffer[64];
 			 * 
 			 *          レイテンシ = 0x0009
 			 */
-			timer_temp = 0x10000 - 0x0177 * eeprom_smpl_interval + 0x0009;
+			timer_tmp = 0x10000 - 0x0177 * eeprom_smpl_interval + 0x0009;
 			//Timer0をセットし直す
-			TMR0H = (BYTE)(timer_temp >> 8); //キャスト時には下位8ビットが残る
-			TMR0L = (BYTE)(timer_temp);
+			TMR0H = (BYTE)(timer_tmp >> 8); //キャスト時には下位8ビットが残る
+			TMR0L = (BYTE)(timer_tmp);
 			
 			//ON/OFF取得
 			//	一列目
@@ -697,23 +713,9 @@ void UserInit(void)
 void ProcessIO(void)
 {
 	char fi,fj;
-	char result_button_press;
 	char pressed_keys;
 	char tmp;
-	char result;
 	unsigned char uc_temp;
-	unsigned char speed_mouse_move_up;
-	unsigned char speed_mouse_move_down;
-	unsigned char speed_mouse_move_left;
-	unsigned char speed_mouse_move_right;
-	unsigned char speed_mouse_wheel_up;
-	unsigned char speed_mouse_wheel_down;
-	char mouse_move_up;
-	char mouse_move_down;
-	char mouse_move_left;
-	char mouse_move_right;
-	char mouse_wheel_up;
-	char mouse_wheel_down;
 
     // User Application USB tasks
     if((USBDeviceState < CONFIGURED_STATE)||(USBSuspendControl==1)) return;
