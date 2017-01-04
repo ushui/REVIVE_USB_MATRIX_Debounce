@@ -54,7 +54,7 @@ REVIVE USB (PIC18F14K50)
 「REVIVE USB MATRIX チャタリング対策版」は「REVIVE USB MATRIX」及び「REVIVE USB MATRIX, Configuration Tool」を参考にして作成しました。作成者である「Bit Trade One, LTD」に感謝いたします。
 
 ***
-2017/01/04 表現の修正と簡略化。
+2017/01/04 表現の修正と簡略化。  
 2016/12/31 readme作成。
 ***
 作成者： ushui（ゆーしゅい）  
