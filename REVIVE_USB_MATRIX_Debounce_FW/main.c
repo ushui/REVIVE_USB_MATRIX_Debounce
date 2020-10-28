@@ -1,6 +1,9 @@
 // USB HID core
 /*
- * MATRIX Debounce Ver 1.1 (2016/01/04)
+ * MATRIX Debounce Ver 1.2 (2020/10/20)
+ *   「REVIVE USB ver 008」のアップデート内容を反映。
+ *   デフォルトのサンプリング周期を4ms、一致検出回数を2回に変更。
+ * MATRIX Debounce Ver 1.1 (2017/01/04)
  *   バッファオーバーフローが発生していたバグの修正。
  * MATRIX Debounce Ver 1.0 (2016/12/31)
  *   「REVIVE USB Debounce Ver 1.3」をベースに「REVIVE USB MATRIX ver 005」を参考にしてMATRIX版へ変更。
@@ -45,7 +48,6 @@
 #define MAIN_C
 
 /** INCLUDES *******************************************************/
-#include <p18f14k50.h>
 #include <adc.h>
 #include <string.h>
 #include "./USB/usb.h"
@@ -108,28 +110,28 @@ void YourLowPriorityISRCode();
 #define STATE_OFF   0
 #define STATE_ON    1
 
-#define NUM_OF_PINS        12
+#define NUM_OF_PINS        36
 #define NUM_OF_SETTINGS    3
 
-#define PIN1    PORTCbits.RC5
-#define PIN2    PORTCbits.RC4
-#define PIN3    PORTCbits.RC3
-#define PIN4    PORTCbits.RC6
-#define PIN5    PORTCbits.RC7
-#define PIN6    PORTBbits.RB7
-#define PIN7    PORTBbits.RB6
-#define PIN8    PORTBbits.RB5
-#define PIN9    PORTBbits.RB4
-#define PIN10   PORTCbits.RC2
-#define PIN11   PORTCbits.RC1
-#define PIN12   PORTCbits.RC0
+#define PIN_OUT1	LATCbits.LATC5
+#define	PIN_OUT2	LATCbits.LATC4
+#define	PIN_OUT3	LATCbits.LATC3
+#define PIN_OUT4	LATCbits.LATC6
+#define	PIN_OUT5	LATCbits.LATC7
+#define	PIN_OUT6	LATBbits.LATB7
+#define	PIN_IN1		PORTBbits.RB6
+#define	PIN_IN2		PORTBbits.RB5
+#define	PIN_IN3		PORTBbits.RB4
+#define	PIN_IN4		PORTCbits.RC2
+#define PIN_IN5		PORTCbits.RC1
+#define	PIN_IN6		PORTCbits.RC0
 
 #define EEPROM_SAVE_NUM    5
 #define EEPROM_SAME_COUNT  3
 
 /** VARIABLES ******************************************************/
 #pragma udata
-char c_version[]="MD1.1";
+char c_version[]="MD1.2";
 BYTE mouse_buffer[4];
 BYTE joystick_buffer[4];
 BYTE keyboard_buffer[8]; 
@@ -673,8 +675,8 @@ void UserInit(void)
             }
         }
         //以下の初期値は1以上にすること
-        eeprom_smpl_interval = 10;
-        eeprom_check_count = 3;
+        eeprom_smpl_interval = 4;
+        eeprom_check_count = 2;
         WriteEEPROM(NUM_OF_PINS*NUM_OF_SETTINGS, eeprom_smpl_interval);
         WriteEEPROM(NUM_OF_PINS*NUM_OF_SETTINGS+1, eeprom_check_count);
 //        uc_temp = WriteEEPROM_Agree(EEPROM_SAVE_NUM*(NUM_OF_PINS*NUM_OF_SETTINGS), 0x0A, EEPROM_SAVE_NUM);
@@ -948,7 +950,11 @@ void ProcessIO(void)
             hid_report_out_flag--;
         }
     }
-   if(!HIDTxHandleBusy(lastTransmission2))
+    if(!HIDRxHandleBusy(lastOUTTransmissionKeyboard))
+    {
+        lastOUTTransmissionKeyboard = HIDRxPacket(HID_EP3, (BYTE*)hid_report_out, HID_INT_OUT_EP_SIZE);
+    }
+    if(!HIDTxHandleBusy(lastTransmission2))
     {
         //Buttons
         joystick_input[0] = joystick_buffer[0];
