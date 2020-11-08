@@ -29,7 +29,8 @@ REVIVE USBのショートピンをBOOTから戻して再度PCへ接続してく�
 右下に「FW Version: MDx.x」と表示されていれば対策版ファームウェアが正しく適用されています。
 
 ## 対策版設定ツールの追加変更箇所
-![REVIVE USB MATRIX Debounce, Configuration Tool](https://raw.githubusercontent.com/ushui/REVIVE_USB_MATRIX_Debounce/master/revive_usb_matrix_debounce_ct.png "REVIVE USB MATRIX Debounce, Configuration Toolのデジタル設定画面")
+![REVIVE USB MATRIX Debounce, Configuration Tool](https://raw.githubusercontent.com/ushui/REVIVE_USB_MATRIX_Debounce/master/revive_usb_matrix_debounce_ct.png "REVIVE USB MATRIX Debounce, Configuration Toolのデジタル設定画面")  
+※ウィンドウタイトルのバージョン表記が誤っていますが、正しくは「ver 1.40」です。  
 #### チャタリング防止設定 - サンプリング周期
 指定した時間の一定間隔をおいて入力値の受信・送信を行います。  
 例えば4msに設定した場合は、REVIVE USBが4msごとに受信した入力値を反映し、USBで接続した機器に送信します。  
