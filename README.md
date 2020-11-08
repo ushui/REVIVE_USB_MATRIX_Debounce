@@ -1,3 +1,9 @@
+#### 最新バージョン
+ファームウェア: M1.2  
+設定ツール: 1.40  
+最終更新日: 2020/10/29  
+最終更新内容: 公式ファームウェアver008のマージ、設定ツールの機能追加(遅延秒数の計算機能)  
+
 # REVIVE USB MATRIX チャタリング対策版（PID004B）
 [REVIVE USB チャタリング対策版（PID004A）](https://github.com/ushui/REVIVE_USB_Debounce)のマトリクス入力対応版です。
 
